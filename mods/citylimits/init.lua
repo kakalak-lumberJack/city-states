@@ -282,7 +282,7 @@ minetest.register_chatcommand("removespawn", {
 		else
 			cityspawns[param] = nil
 			store_table("cityspawns", cityspawns)
-			minetest.chat_send_player(param.."removed from spawn list")
+			minetest.chat_send_player(name, param.." removed from spawn list")
 		end
 	end
 })
